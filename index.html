@@ -14,41 +14,112 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
+  <style>
+    .my-con {
+      border: 1px solid green;
+    }
+
+    .my-row {
+      border: 3px solid red;
+      height: 100px;
+    }
+
+    .my-col {
+      border: 3px dotted blue;
+    }
+  </style>
+
   <title>Hello, world!</title>
 </head>
 <body>
-  <div id="nav-bar">
-    <div class="row">
-      <div class="col-2 logo">
-        <ul>
-          <li><a href="#home"><h3 class="logo-h">&ltl/&gt</h3></a></li>
-        </ul>
+
+  <div class="page" id="home">
+    <!-- Navbar -->
+    <div id="nav-bar">
+      <div class="row">
+        <div class="col-2 logo">
+          <ul>
+            <li><a href="#home"><h3 class="logo-h">&ltl/&gt</h3></a></li>
+          </ul>
+        </div>
+        <div class="col-10 nav">
+          <ul>
+            <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#projects" id="nav-projects">Projects</a></li>
+            <li><a href="#resume" id ="nav-resume">Resume</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-10 nav">
-        <ul>
-          <li><a href="#about" id="nav-about">About</a></li>
-          <li><a href="#projects" id="nav-projects">Projects</a></li>
-          <li><a href="#resume" id ="nav-resume">Resume</a></li>
-          <li><a href="#contact" id="nav-contact">Contact</a></li>
-        </ul>
+    </div>
+
+    <!-- Home Content -->
+    <div class="container" id="home-content">
+      <div class="row align-items-center" style="height:92%">
+        <div class="col-5 offset-1">
+          <h1>Hi, I'm Luke and I am a <br>
+             <span style="color:limegreen">software developer</span><br>
+            from Aotearoa.</h1>
+            <p>I'm currently available for full time or <br>
+               freelance work.
+              <a href="#contact" style="text-decoration: underline;">Let's chat</a>
+            </p>
+        </div>
+        <div class="col-4 offset-1">
+          <img src="Images/My-Avatar.png" id="avatar">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <p style="margin-bottom:0px;">Enjoy</p>
+      </div>
+      <div class="row justify-content-center">
+        |<br>
+        v
       </div>
     </div>
   </div>
 
-  <div class="container">
-      <div class="row">
-          <div class="col-4">
+  <div class="container my-con">
+      <div class="row my-row">
+          <div class="col-4 col-xs-2 my-col">
               Row 1 Col 1
           </div>
-          <div class="col-8">
+          <div class="col-8 col-xs-10 my-col">
               Row 1 Col 2
           </div>
       </div>
-      <div class="row">
-          <div class="col">
+      <div class="row justify-content-center align-items-center my-row">
+          <div class="col-4 my-col">
               Row 2 Col 1
           </div>
+          <div class="col-4 my-col">
+            Row 2 Col 2
+        </div>
       </div>
+      <div class="row justify-content-around my-row">
+        <div class="col-4 align-self-start my-col">
+            Row 3 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 3 Col 2
+      </div>
+    </div>
+    <div class="row justify-content-between my-row">
+      <div class="col-4 my-col">
+          Row 4 Col 1
+      </div>
+      <div class="col-4 my-col">
+        Row 4 Col 2
+    </div>
+  </div>
+  <div class="row my-row">
+    <div class="col-4 offset-1 my-col">
+        Row 5 Col 1
+    </div>
+    <div class="col-2 offset-2 my-col">
+      Row 5 Col 2
+  </div>
+</div>
   </div>
 
   <!-- JavaScript -->
