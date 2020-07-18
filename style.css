@@ -3,13 +3,25 @@ html, body {
     width: auto;
     height: 100%;
     /* background-color: black; */
-    color: white;
+}
+
+.page {
+  height: 100%;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 /****** Home ******/
 #home {
   height: 100%;
   background-color: black;
+}
+
+#home p {
+  color: white;
 }
 
 /****** Navbar ******/
@@ -100,4 +112,44 @@ h1 {
 #avatar {
   width: 324px;
   height: 344px;
+}
+
+#down-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+/****** Projects ******/
+#projects {
+  background-color: #F7F6FA;
+}
+
+#projects h2 {
+  margin-top: 50px;
+}
+
+#projects p {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 20px;
+}
+
+.project-container {
+  Height: 255px;
+  background-color: white;
+}
+
+#logo-nyriad {
+  width: 206px;
+  height: 48px;
+}
+
+#logo-waikato {
+  width: 101px;
+  height: 117px;
+}
+
+#logo-luke {
+  width: 96px;
+  height: 96px;
 }

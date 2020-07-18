@@ -44,8 +44,8 @@
         </div>
         <div class="col-10 nav">
           <ul>
-            <li><a href="#about" id="nav-about">About</a></li>
             <li><a href="#projects" id="nav-projects">Projects</a></li>
+            <li><a href="#about" id="nav-about">About</a></li>
             <li><a href="#resume" id ="nav-resume">Resume</a></li>
             <li><a href="#contact" id="nav-contact">Contact</a></li>
           </ul>
@@ -55,7 +55,7 @@
 
     <!-- Home Content -->
     <div class="container" id="home-content">
-      <div class="row align-items-center" style="height:92%">
+      <div class="row align-items-center" style="height:93%">
         <div class="col-5 offset-1">
           <h1>Hi, I'm Luke and I am a <br>
              <span style="color:limegreen">software developer</span><br>
@@ -66,15 +66,46 @@
             </p>
         </div>
         <div class="col-4 offset-1">
-          <img src="Images/My-Avatar.png" id="avatar">
+          <img src="Images/My-Avatar.png" id="avatar" alt="My Avatar">
         </div>
       </div>
+      <div onclick="moveDown()">
+        <div class="row justify-content-center">
+          <p style="margin-bottom:5px;">Enjoy</p>
+        </div>
+        <div class="row justify-content-center">
+          <img src="Images/Icons/Down-Arrow.png" id="down-arrow" alt="Down Arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Content -->
+  <div class="page" id="projects">
+    <div class="container">
       <div class="row justify-content-center">
-        <p style="margin-bottom:0px;">Enjoy</p>
+        <h2>My Projects</h2>
       </div>
       <div class="row justify-content-center">
-        |<br>
-        v
+        <p>Here are some of the best projects I've <br>
+        worked on recently.</p>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4 justify-items-center">
+          <div class="project-container">
+            <img src="Images/Nyriad+Logo.png" id="logo-nyriad" alt="Nyriad Logo">
+          </div>
+        </div>
+        <div class="col-4 justify-items-center">
+            <div class="project-container">
+              <img src="Images/1200px-University_of_Waikato_logo.png" id="logo-waikato" alt="Waikato Logo">
+            </div>
+        </div>
+        <div class="col-4 justify-items-center">
+          <div class="project-container">
+            <img src="Images/Logo-b.png" id="logo-luke" alt="My Logo">
+          </div>
+        </div>
       </div>
     </div>
   </div>
