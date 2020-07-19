@@ -26,5 +26,18 @@ function navBarStick() {
 /****** Skills dropdown menus ******/
 
 function dropDown(skill) {
-  document.getElementById(skill).classList.toggle("skills-active");
+  var childP = skill.getElementsByTagName("P")[0];
+  var childImg = skill.getElementsByTagName("IMG")[0];
+  
+  skill.classList.toggle("skills-active");
+  childP.classList.toggle("skills-p-active");
+
+  if (childImg.src.includes("plus.svg"))
+  {
+    childImg.src="Images/Icons/minus.svg"
+  }
+  else {
+    childImg.src="Images/Icons/plus.svg"
+  }
+
 }

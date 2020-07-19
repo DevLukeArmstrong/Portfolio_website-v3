@@ -189,9 +189,16 @@ h1 {
 }
 
 .skills-bar {
-  height: 50px;
+  max-height: 50px;
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   background-color: white;
+
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.skills-row {
+  height: 50px;
 }
 
 h3 {
@@ -206,22 +213,18 @@ h3 {
   height: 18px !important;
 }
 
-.skills-drop-down-con {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.2s ease-out;
+.skills-bar p {
+  text-align: left !important;
+  font-size: 15px;
+  opacity: 0;
+
+  transition: ease-in 0.4s;
 }
 
 .skills-active {
-  max-height: 50px !important;
+  max-height: 200px !important;
 }
 
-.skills-drop-down {
-  display: block;
-  background-color: white;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
-}
-
-.skills-drop-down p {
-  text-align: left !important;
+.skills-p-active {
+  opacity: 1 !important;
 }
