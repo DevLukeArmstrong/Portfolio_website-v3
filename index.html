@@ -37,12 +37,12 @@
     <!-- Navbar -->
     <div id="nav-bar">
       <div class="row">
-        <div class="col-2 logo">
+        <div class="col-2 align-self-center logo">
           <ul>
-            <li><a href="#home"><h3 class="logo-h">&ltl/&gt</h3></a></li>
+            <li><a href="#home"><img src="Images/Icons/Logo-w.svg" alt="My Logo"></a></li>
           </ul>
         </div>
-        <div class="col-10 nav">
+        <div class="col-10 align-self-center nav">
           <ul>
             <li><a href="#projects" id="nav-projects">Projects</a></li>
             <li><a href="#about" id="nav-about">About</a></li>
@@ -62,7 +62,7 @@
             from Aotearoa.</h1>
             <p>I'm currently available for full time or <br>
                freelance work.
-              <a href="#contact" style="text-decoration: underline;">Let's chat</a>
+              <a href="#contact" style="text-decoration: underline; color: #06B8BE;">Let's chat</a>
             </p>
         </div>
         <div class="col-4 offset-1">
@@ -91,21 +91,71 @@
         worked on recently.</p>
       </div>
       <div class="row justify-content-around">
-        <div class="col-4 justify-items-center">
-          <div class="project-container">
+        <div class="col-4">
+          <div class="col-12 align-items-center d-flex justify-content-center project-container">
             <img src="Images/Nyriad+Logo.png" id="logo-nyriad" alt="Nyriad Logo">
           </div>
         </div>
-        <div class="col-4 justify-items-center">
-            <div class="project-container">
+        <div class="col-4">
+            <div class="col-12 align-items-center d-flex justify-content-center project-container">
               <img src="Images/1200px-University_of_Waikato_logo.png" id="logo-waikato" alt="Waikato Logo">
             </div>
         </div>
-        <div class="col-4 justify-items-center">
-          <div class="project-container">
+        <div class="col-4">
+          <div class="col-12 align-items-center d-flex justify-content-center project-container">
             <img src="Images/Logo-b.png" id="logo-luke" alt="My Logo">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Content-->
+  <div class="page" id="about">
+    <div class="container" id="about-content">
+      <div class="row justify-content-center">
+        <div class="col-4 offset-1">
+          <img src="Images/serious-young-man-in-classy-shirt-in-studio-3789879@2x.png" alt="Yours truely">
+        </div>
+        <div class="col-5 align-self-center offset-1">
+          <h2>About me</h2>
+          <p>I've worked in an up and coming data storage based start
+            -up for 1.5 years gaining experience in an agile environment
+              with a backend developing team. I acquired knowledge in
+              Dev Ops, UX design and development, bug fixing, and code
+                maintenance and as a junior developer I aim to branch my
+                skills into mobile development, UX design and eventually
+                  full-stack development.
+          </p>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="row justify-content-center">
+            <h2>What I know</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 col-md-6">
+            <p>Here are the programming languages I am proficient in.</p>
+          </div>
+        </div>
+
+        <!-- C++ skill -->
+        <div class="row justify-content-center">
+          <div class="col-6 d-flex align-items-center skills-top skills-bar" onClick="dropDown('skills-c++')">
+            <div class="col-1">
+              <h3>C++</h3>
+            </div>
+            <div class="col-1 offset-10 offset-md-9">
+              <img src="Images/Icons/plus.svg" alt="Plus">
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center skills-drop-down-con" id="skills-c++">
+          <div class="col-6 skills-drop-down">
+            <p>text holder</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

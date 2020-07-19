@@ -22,3 +22,9 @@ function navBarStick() {
       navbar.classList.remove("sticky");
   }
 }
+
+/****** Skills dropdown menus ******/
+
+function dropDown(skill) {
+  document.getElementById(skill).classList.toggle("skills-active");
+}
