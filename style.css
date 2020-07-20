@@ -20,6 +20,11 @@ p {
   color: #9adc23 !important;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   h2 {
     font-family: 'Lato', sans-serif;
@@ -39,6 +44,67 @@ p {
 }
 
 /****** Navbar ******/
+#nav-overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F0E17;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#nav-overlay img {
+  width: 24px;
+  height: 24px;
+}
+
+hr {
+  background-color: white;
+  border: 0;
+  clear:both;
+  display:block;              
+  height: 1px;
+}
+
+#nav-overlay button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 20px 0px;
+
+}
+
+#nav-overlay h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#resume-btn {
+  width: 100%;
+  background-color: #06B8BE !important;
+  border: none !important;
+  color: black !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 20px !important;
+  padding: 14px 0px !important;
+  margin: 10px 0px !important;
+  border-radius: 4px !important;
+}
+
 #nav-bar {
   display: block;
   position: absolute;

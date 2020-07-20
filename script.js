@@ -67,8 +67,17 @@ function navBarStick() {
   }
 }
 
+var body = document.getElementById("body");
+
 function activeNavIcon(navCon) {
-  navCon.classList.toggle("change");
+  // navCon.classList.toggle("change");
+  document.getElementById('nav-overlay').style.display = 'block';
+  body.classList.toggle("stop-scrolling");
+}
+
+function off() {
+  document.getElementById("nav-overlay").style.display = "none";
+  body.classList.toggle("stop-scrolling");
 }
 
 /****** Homepage down button ******/
