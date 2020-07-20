@@ -21,7 +21,7 @@
   <div class="page" id="home">
     <!-- Navbar -->
     <div id="nav-bar">
-      <div class="row">
+      <div class="row" style="height:100%;">
         <div class="col-2 align-self-center logo">
           <ul>
             <li><a href="#home"><img src="Images/Icons/Logo-w.svg" alt="My Logo"></a></li>
@@ -32,7 +32,7 @@
             <li><a href="#projects" id="nav-projects">Projects</a></li>
             <li><a href="#about" id="nav-about">About</a></li>
             <li><a href="#contact" id="nav-contact">Contact</a></li>
-            <li><a href="#resume" id ="nav-resume">Resume</a></li>
+            <li><a href="Documents/Luke_Armstrong_CV.pdf" target="_blank" id ="nav-resume">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -40,7 +40,7 @@
 
     <!-- Home Content -->
     <div class="container" id="home-content">
-      <div class="row align-items-center" style="height:93%">
+      <div class="row align-items-center" style="height:92%">
         <div class="col-5 offset-1">
           <h1>Hi, I'm Luke and I am a <br>
              <span class="green">software developer</span><br>
@@ -54,12 +54,12 @@
           <img src="Images/My-Avatar.png" id="avatar" alt="My Avatar">
         </div>
       </div>
-      <div onclick="moveDown()">
+      <div>
         <div class="row justify-content-center">
-          <p style="margin-bottom:5px;">Enjoy</p>
+          <p style="margin-bottom:5px;" id="enjoy" onclick="moveDown()" onmouseover="mouseOver()" onmouseout="mouseOut()">Enjoy</p>
         </div>
         <div class="row justify-content-center">
-          <img src="Images/Icons/Down-Arrow.png" id="down-arrow" alt="Down Arrow">
+          <img src="Images/Icons/Down-Arrow.png" id="down-arrow" alt="Down Arrow" onclick="moveDown()" onmouseover="mouseOver()" onmouseout="mouseOut()">
         </div>
       </div>
     </div>
@@ -77,17 +77,17 @@
       </div>
       <div class="row justify-content-around">
         <div class="col-4">
-          <div class="col-12 align-items-center d-flex justify-content-center project-container">
+          <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.nyriad.com')">
             <img src="Images/Nyriad+Logo.png" id="logo-nyriad" alt="Nyriad Logo">
           </div>
         </div>
         <div class="col-4">
-            <div class="col-12 align-items-center d-flex justify-content-center project-container">
+            <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.waikato.ac.nz/study/qualifications/bachelor-of-science-technology/computer-science')">
               <img src="Images/1200px-University_of_Waikato_logo.png" id="logo-waikato" alt="Waikato Logo">
             </div>
         </div>
         <div class="col-4">
-          <div class="col-12 align-items-center d-flex justify-content-center project-container">
+          <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.github.com/DevLukeArmstrong/Website-v3')">
             <img src="Images/Logo-b.png" id="logo-luke" alt="My Logo">
           </div>
         </div>
@@ -338,9 +338,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-3">
-          <img src="Images/Icons/github.png" alt="Github">
-          <img src="Images/Icons/linkeden.png" alt="Linkden">
-          <img src="Images/Icons/Insta.svg" alt="Instagram">
+          <img src="Images/Icons/github.png" alt="Github" onclick="openLink('https://github.com/DevLukeArmstrong')">
+          <img src="Images/Icons/linkeden.png" alt="Linkden" onclick="openLink('https://www.linkedin.com/in/luke-armstrong96/')">
+          <img src="Images/Icons/Insta.svg" alt="Instagram" onclick="openLink('https://www.instagram.com/luke__armstrong/')">
         </div>
       </div>
       <div class="row justify-content-center">

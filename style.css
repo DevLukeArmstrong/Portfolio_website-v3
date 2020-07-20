@@ -1,7 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     width: auto;
-    height: 100%;
+    /* height: 100%; */
     background-color: black;
 }
 
@@ -17,12 +17,12 @@ p {
 }
 
 .green {
-  color: #9adc23;
+  color: #9adc23 !important;
 }
 
 /****** Home ******/
 #home {
-  height: 100%;
+  height: 100vh;
   background-color: black;
 }
 
@@ -32,19 +32,13 @@ p {
 
 /****** Navbar ******/
 #nav-bar {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    top: 20px;
-    padding-left:50px;
-    padding-right: 50px;
-}
-
-.logo {
-    position: relative;
-    display: inline;
-    margin: 12.5px 0px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 20px;
+  padding-left:50px;
+  padding-right: 50px;
 }
 
 .logo ul {
@@ -57,22 +51,23 @@ p {
 }
 
 .nav {
-    position: relative;
-    display: inline;
-    margin: 12.5px 0px;
+  position: relative;
+  display: inline;
+  margin: 12.5px 0px;
+  vertical-align: top;
 }
 
 .nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  text-align: center;
 }
 
 ul li {
-    display: inline;
-    margin: 0px 10px;
+  display: inline;
+  margin: 0px 10px;
 }
 
 ul li a, .logo ul li a{
@@ -80,25 +75,38 @@ ul li a, .logo ul li a{
 }
 
 ul li a {
-    padding: 10px 20px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    color: white;
+  display: inline-block;
+  width: 115px;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
 } 
 
 .nav ul li a:hover {
-    transition-duration: 0.25s;
-    color: black;
-    text-decoration: none;
+  transition-duration: 0.25s;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
 
-    /*Switch this to active*/
-    background: #06B8BE;
-    border-radius: 4px;
+  background: #F7F6FA;
+}
+
+#nav-resume {
+  color: black;
+  background: #06B8BE;
+  border-radius: 4px;
+}
+
+#nav-resume:hover {
+  background: #F7F6FA;
 }
 
 .active-nav-button {
-    color: limegreen;
+  color: black;
+  border-radius: 4px;
+  background: #F7F6FA;
 }
 
 .sticky {
@@ -116,13 +124,16 @@ ul li a {
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  /* font-size: 1em; */
   color: white;
 }
 
 #avatar {
   width: 324px;
   height: 344px;
+}
+
+#enjoy, #down-arrow {
+  cursor: pointer;
 }
 
 #down-arrow {
@@ -151,6 +162,11 @@ h1 {
   background-color: white;
 }
 
+.project-container:hover {
+  box-shadow: 4px 6px rgba(0,0,0, 0.1);
+}
+
+
 #logo-nyriad {
   width: 206px;
   height: 48px;
@@ -169,11 +185,12 @@ h1 {
 /****** About ******/
 #about {
   background-color: #F7F6FA;
-  height: 90%;
+  height: 850px;
 }
 
 #about-content {
   padding: 40px 0px;
+  padding-top: 100px;
 }
 
 #about img {
@@ -232,7 +249,7 @@ h3 {
 
 /****** Contact ******/
 #contact-content {
-  margin-top: 280px;
+  margin-top: 300px;
 }
 
 #contact img {
