@@ -22,8 +22,13 @@
     <!-- Navbar -->
     <div id="nav-bar">
       <div class="row" style="height:100%;">
-        <div class="col-2 align-self-center logo">
-          <ul>
+        <div class="small-nav-icon" onclick="activeNavIcon(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="col-md-2 col-12 align-self-center logo">
+          <ul class="text-center">
             <li><a href="#home"><img src="Images/Icons/Logo-w.svg" alt="My Logo"></a></li>
           </ul>
         </div>
@@ -41,7 +46,7 @@
     <!-- Home Content -->
     <div class="container" id="home-content">
       <div class="row align-items-center" style="height:92%">
-        <div class="col-5 offset-1 col-md-6">
+        <div class="col-md-6 col-10 offset-1 order-1 order-md-0 text-center text-md-left">
           <h1>Hi, I'm Luke and I am a <br>
              <span class="green">software developer</span><br>
             from Aotearoa.</h1>
@@ -50,7 +55,7 @@
               <a href="#contact" style="text-decoration: underline; color: #06B8BE;">Let's chat</a>
             </p>
         </div>
-        <div class="col-4 offset-1 col-md-3">
+        <div class="col-10 col-md-3 order-0 offset-1 text-center">
           <img src="Images/My-Avatar.png" id="avatar" alt="My Avatar">
         </div>
       </div>
@@ -76,18 +81,18 @@
         worked on recently.</p>
       </div>
       <div class="row justify-content-around">
-        <div class="col-4">
-          <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.nyriad.com')">
+        <div class="col-md-4">
+          <div class="col-md-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.nyriad.com')">
             <img src="Images/Nyriad+Logo.png" id="logo-nyriad" alt="Nyriad Logo">
           </div>
         </div>
-        <div class="col-4">
-            <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.waikato.ac.nz/study/qualifications/bachelor-of-science-technology/computer-science')">
+        <div class="col-md-4">
+            <div class="col-md-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.waikato.ac.nz/study/qualifications/bachelor-of-science-technology/computer-science')">
               <img src="Images/1200px-University_of_Waikato_logo.png" id="logo-waikato" alt="Waikato Logo">
             </div>
         </div>
-        <div class="col-4">
-          <div class="col-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.github.com/DevLukeArmstrong/Website-v3')">
+        <div class="col-md-4">
+          <div class="col-md-12 align-items-center d-flex justify-content-center project-container" onclick="openLink('https://www.github.com/DevLukeArmstrong/Website-v3')">
             <img src="Images/Logo-b.png" id="logo-luke" alt="My Logo">
           </div>
         </div>
@@ -99,10 +104,10 @@
   <div class="page" id="about">
     <div class="container" id="about-content">
       <div class="row justify-content-center">
-        <div class="col-4 offset-1">
+        <div class="col-md-4 col-10 offset-sm-0 offset-md-1 order-md-0 order-1">
           <img src="Images/serious-young-man-in-classy-shirt-in-studio-3789879@2x.png" alt="Yours truely">
         </div>
-        <div class="col-5 align-self-center offset-1">
+        <div class="col-md-5 col-sm-11 col-10 align-self-center offset-md-1 offset-sm-0 offset-1 order-md-1 order-0">
           <h2>About me</h2>
           <p>I've worked in an up and coming data storage based start
             -up for 1.5 years gaining experience in an agile environment
@@ -115,29 +120,31 @@
         </div>
       </div>
       <div class="skills">
-        <div class="row justify-content-center">
-            <h2>What I know</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-4 col-md-6">
-            <p>Here are the programming languages I am <br>proficient in.</p>
+        <div class="container">
+          <div class="row justify-content-center">
+              <h2>What I know</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-12">
+              <p>Here are the programming languages I am <br>proficient in.</p>
+            </div>
           </div>
         </div>
 
         <!-- C++ skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-top skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>C++</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>I have 1.5 years experience as a C++ developer creating
                     and maintaining front-end/back-end data storage software</p>
                 </div>
@@ -147,19 +154,19 @@
         </div>
 
         <!-- React skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>React</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Proficiency in React and actively adding react programs to my portfolio</p>
                 </div>
               </div>
@@ -168,19 +175,19 @@
         </div>
 
         <!-- Python skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>Python</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Proficiency in creating whitebox/blackbox tests in python</p>
                 </div>
               </div>
@@ -189,19 +196,19 @@
         </div>
 
         <!-- Bash skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>Bash</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Proficiency in creating automation bash scripts</p>
                 </div>
               </div>
@@ -210,19 +217,19 @@
         </div>
 
         <!-- HTML/CSS skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>HTML/CSS</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Proficieny in creating HTML5 webpages and vanilla CSS</p>
                 </div>
               </div>
@@ -231,19 +238,19 @@
         </div>
 
         <!-- JS skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>JS</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Proficieny in Javascript using it in multiple universtity projects</p>
                 </div>
               </div>
@@ -252,19 +259,19 @@
         </div>
 
         <!-- C# skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>C#</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Indepth knowledge in C# using it in multiple university projects</p>
                 </div>
               </div>
@@ -273,19 +280,19 @@
         </div>
 
         <!-- Golang skill -->
-        <div class="container">
+        <div class="container skills-con">
           <div class="row justify-content-center">
-            <div class="col-6 skills-top skills-bar" onClick="dropDown(this)">
+            <div class="col-md-6 col-12 skills-bottom skills-bar" onClick="dropDown(this)">
               <div class="row d-flex align-content-center skills-row ">
-                <div class="col-2">
+                <div class="col-md-2 col-2 offset-1 offset-md-0">
                   <h3>Golang</h3>
                 </div>
-                <div class="col-2 offset-8 d-flex justify-content-end align-self-center">
+                <div class="col-md-2 col-2 offset-7 offset-md-8 d-flex justify-content-end align-self-center">
                   <img src="Images/Icons/plus.svg" alt="Plus">
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-11 offset-1 offset-md-0">
                   <p>Intermediate knowledge in golang, creating a front-end platform with it</p>
                 </div>
               </div>
@@ -303,13 +310,15 @@
         <img src="Images/Icons/hand-peace.svg" alt="Peace!">
       </div>
       <div class="row justify-content-center">
-        <p>I'm currently available for full time or freelance work.
-          Let's chat.
-        </p>
+        <div class="col-md-12 col-10 text-center">
+          <p>I'm currently available for full time or freelance work.
+            Let's chat.
+          </p>
+        </div>
       </div>
       <form action="PHP/mail.php" method="POST">
         <div class="row">
-          <div class="col-4 offset-1">
+          <div class="col-md-4 col-10 offset-1">
             <div class="left-side first">
               <input type="text" name="name" id="name" placeholder="Name">
             </div>
@@ -317,15 +326,15 @@
               <input type="text" name="email" id="email" placeholder="Email">
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-md-6 col-10 offset-md-0 offset-1">
             <textarea type="message" id="message" placeholder="Message"></textarea>
           </div>
         </div>
         <div class="row">
-          <div class="col-3 offset-1 align-self-center">
+          <div class="col-md-3 offset-1 align-self-center">
               <img src="Images/Icons/Info.svg" alt="Info"><p>All fields are required</p>
           </div>
-          <div class="col-3 offset-4">
+          <div class="col-md-3 col-12 offset-md-4">
             <input class="float-right" type="submit" name="submit" id="submit" value="Send">
           </div>
         </div>
@@ -337,22 +346,22 @@
   <footer>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-3 col-sm-3">
+        <div class="col-md-3 col-sm-3 col-6">
           <div class="row justify-content-around">
-            <div class="col-3 d-flex justify-content-center">
+            <div class="col-md-3 col-2 d-flex justify-content-center">
               <img src="Images/Icons/github.png" alt="Github" onclick="openLink('https://github.com/DevLukeArmstrong')">
             </div>
-            <div class="col-3  d-flex justify-content-center">
+            <div class="col-md-3 col-2 d-flex justify-content-center">
               <img src="Images/Icons/linkeden.png" alt="Linkden" onclick="openLink('https://www.linkedin.com/in/luke-armstrong96/')">
             </div>
-            <div class="col-3  d-flex justify-content-center">
+            <div class="col-md-3 col-2 d-flex justify-content-center">
               <img src="Images/Icons/Insta.svg" alt="Instagram" onclick="openLink('https://www.instagram.com/luke__armstrong/')">
             </div> 
          </div>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-3">
+        <div class="col-md-4 col-sm-5">
           <p>&lt <span class="green">Lovingly made by me</span> /&gt</p>
         </div>
       </div>

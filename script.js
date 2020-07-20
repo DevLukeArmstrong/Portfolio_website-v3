@@ -67,6 +67,10 @@ function navBarStick() {
   }
 }
 
+function activeNavIcon(navCon) {
+  navCon.classList.toggle("change");
+}
+
 /****** Homepage down button ******/
 
 var enjoy = document.getElementById("enjoy");
