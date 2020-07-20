@@ -2,12 +2,8 @@ html, body {
     scroll-behavior: smooth;
     width: auto;
     height: 100%;
-    /* background-color: black; */
+    background-color: black;
 }
-
-/* .page {
-  height: 100%;
-} */
 
 h2 {
   font-family: 'Lato', sans-serif;
@@ -18,6 +14,10 @@ h2 {
 p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+}
+
+.green {
+  color: #9adc23;
 }
 
 /****** Home ******/
@@ -169,6 +169,7 @@ h1 {
 /****** About ******/
 #about {
   background-color: #F7F6FA;
+  height: 90%;
 }
 
 #about-content {
@@ -227,4 +228,83 @@ h3 {
 
 .skills-p-active {
   opacity: 1 !important;
+}
+
+/****** Contact ******/
+#contact-content {
+  margin-top: 280px;
+}
+
+#contact img {
+  width: 46px;
+  height: 52px;
+}
+
+#contact p {
+  margin: 32px 0px;
+  color: white;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+  padding-left: 18px;
+}
+
+textarea {
+  width: 100%;
+  height: 112px;
+  padding-left: 18px;
+  padding-top: 12px;
+}
+
+#contact form img {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+form p {
+  display: inline;
+  margin-left: 10px !important;
+  font-size: 16px;
+}
+
+#submit {
+  width: 129px;
+  height: 48px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  border-radius: 2px;
+  border: 0px;
+  background-color: #06B8BE;
+}
+
+/****** Footer ******/
+footer {
+  margin-top: 65px;
+}
+
+footer img {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 35px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 72px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #6E6E6E;
 }

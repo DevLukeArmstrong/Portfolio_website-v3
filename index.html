@@ -14,21 +14,6 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-  <style>
-    .my-con {
-      border: 1px solid green;
-    }
-
-    .my-row {
-      border: 3px solid red;
-      height: 100px;
-    }
-
-    .my-col {
-      border: 3px dotted blue;
-    }
-  </style>
-
   <title>Hello, world!</title>
 </head>
 <body>
@@ -46,8 +31,8 @@
           <ul>
             <li><a href="#projects" id="nav-projects">Projects</a></li>
             <li><a href="#about" id="nav-about">About</a></li>
-            <li><a href="#resume" id ="nav-resume">Resume</a></li>
             <li><a href="#contact" id="nav-contact">Contact</a></li>
+            <li><a href="#resume" id ="nav-resume">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +43,7 @@
       <div class="row align-items-center" style="height:93%">
         <div class="col-5 offset-1">
           <h1>Hi, I'm Luke and I am a <br>
-             <span style="color:limegreen">software developer</span><br>
+             <span class="green">software developer</span><br>
             from Aotearoa.</h1>
             <p>I'm currently available for full time or <br>
                freelance work.
@@ -135,7 +120,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-4 col-md-6">
-            <p>Here are the programming languages I am proficient in.</p>
+            <p>Here are the programming languages I am <br>proficient in.</p>
           </div>
         </div>
 
@@ -311,48 +296,61 @@
     </div>
   </div>
 
-  <div class="container my-con">
-      <div class="row my-row">
-          <div class="col-4 col-xs-2 my-col">
-              Row 1 Col 1
-          </div>
-          <div class="col-8 col-xs-10 my-col">
-              Row 1 Col 2
-          </div>
+  <!-- Contact Content -->
+  <div class="page" id="contact">
+    <div class="container" id="contact-content">
+      <div class="row justify-content-center">
+        <img src="Images/Icons/hand-peace.svg" alt="Peace!">
       </div>
-      <div class="row justify-content-center align-items-center my-row">
-          <div class="col-4 my-col">
-              Row 2 Col 1
+      <div class="row justify-content-center">
+        <p>I'm currently available for full time or freelance work.
+          Let's chat.
+        </p>
+      </div>
+      <form action="PHP/mail.php" method="POST">
+        <div class="row">
+          <div class="col-4 offset-1">
+            <div class="left-side first">
+              <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="left-side second">
+              <input type="text" name="email" id="email" placeholder="Email">
+            </div>
           </div>
-          <div class="col-4 my-col">
-            Row 2 Col 2
+          <div class="col-6">
+            <textarea type="message" id="message" placeholder="Message"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-around my-row">
-        <div class="col-4 align-self-start my-col">
-            Row 3 Col 1
+        <div class="row">
+          <div class="col-3 offset-1 align-self-center">
+              <img src="Images/Icons/Info.svg" alt="Info"><p>All fields are required</p>
+          </div>
+          <div class="col-3 offset-4">
+            <input class="float-right" type="submit" name="submit" id="submit" value="Send">
+          </div>
         </div>
-        <div class="col-4 my-col">
-          Row 3 Col 2
-      </div>
-    </div>
-    <div class="row justify-content-between my-row">
-      <div class="col-4 my-col">
-          Row 4 Col 1
-      </div>
-      <div class="col-4 my-col">
-        Row 4 Col 2
+      </form>
     </div>
   </div>
-  <div class="row my-row">
-    <div class="col-4 offset-1 my-col">
-        Row 5 Col 1
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <img src="Images/Icons/github.png" alt="Github">
+          <img src="Images/Icons/linkeden.png" alt="Linkden">
+          <img src="Images/Icons/Insta.svg" alt="Instagram">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <p>&lt <span class="green">Lovingly made by me</span> /&gt</p>
+        </div>
+      </div>
     </div>
-    <div class="col-2 offset-2 my-col">
-      Row 5 Col 2
-  </div>
+  </footer>
 </div>
-  </div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
