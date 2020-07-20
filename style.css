@@ -141,6 +141,13 @@ h1 {
   height: 24px;
 }
 
+@media( max-width: 990px) {
+  #avatar {
+    width: 224px;
+    height: 244px;
+  }
+}
+
 /****** Projects ******/
 #projects {
   background-color: #F7F6FA;
@@ -168,7 +175,7 @@ h1 {
 
 
 #logo-nyriad {
-  width: 206px;
+  width: auto;
   height: 48px;
 }
 
@@ -180,6 +187,13 @@ h1 {
 #logo-luke {
   width: 96px;
   height: 96px;
+}
+
+@media( max-width: 990px) {
+  #logo-nyriad {
+    width: auto;
+    height: 38px;
+  }
 }
 
 /****** About ******/
@@ -195,7 +209,7 @@ h1 {
 
 #about img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .skills {
@@ -305,16 +319,22 @@ form p {
   background-color: #06B8BE;
 }
 
+@media(max-width: 990px) {
+  #contact-content {
+    margin-top: 400px;
+  }
+}
+
 /****** Footer ******/
 footer {
   margin-top: 65px;
 }
 
 footer img {
-  display: inline-block;
+  /* display: inline-block; */
   width: 36px;
   height: 36px;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }
 
 footer p {
