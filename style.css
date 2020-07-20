@@ -48,7 +48,7 @@ p {
   position: fixed;
   display: block;
   width: 100%;
-  height: 100%;
+  max-height: 0%;
   top: 0;
   left: 0;
   right: 0;
@@ -56,6 +56,13 @@ p {
   background-color: #0F0E17;
   z-index: 2;
   cursor: pointer;
+  overflow: hidden;
+
+  transition: max-height 0.5s;
+}
+
+.nav-active {
+  max-height: 100% !important;
 }
 
 #nav-overlay img {
@@ -69,9 +76,10 @@ hr {
   clear:both;
   display:block;              
   height: 1px;
+  width: 100%;
 }
 
-#nav-overlay button {
+#nav-overlay a {
   background-color: transparent;
   border: none;
   color: white;
@@ -80,8 +88,11 @@ hr {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 24px;
-  margin: 20px 0px;
+}
 
+.add-margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #nav-overlay h5 {
@@ -92,16 +103,14 @@ hr {
 
 #resume-btn {
   width: 100%;
+  text-align: center;
   background-color: #06B8BE !important;
-  border: none !important;
   color: black !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 20px !important;
   padding: 14px 0px !important;
-  margin: 10px 0px !important;
+  margin: 16px 0px !important;
+  margin-bottom: 30px !important;
   border-radius: 4px !important;
 }
 
@@ -126,18 +135,6 @@ hr {
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .logo ul {
@@ -448,12 +445,11 @@ h3 {
 @media (max-width: 768px) {
   #about {
     background-color: #F7F6FA;
-    height: 1100px;
+    height: 1150px;
   }
 
   #about-content {
-    /* margin: -15px; */
-    padding-top: 32px;
+    padding-top: 92px;
   }
 
   #about img {
@@ -478,7 +474,7 @@ h3 {
 @media (max-width: 590px) {
   #about-content {
     margin: -15px;
-    padding-top: 32px;
+    padding-top: 92px;
   }
 
 }
@@ -567,10 +563,9 @@ footer {
 }
 
 footer img {
-  /* display: inline-block; */
   width: 36px;
   height: 36px;
-  /* margin-left: 35px; */
+  cursor: pointer;
 }
 
 footer p {

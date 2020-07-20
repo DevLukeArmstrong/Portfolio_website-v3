@@ -68,15 +68,15 @@ function navBarStick() {
 }
 
 var body = document.getElementById("body");
+var navOverlay = document.getElementById('nav-overlay');
 
-function activeNavIcon(navCon) {
-  // navCon.classList.toggle("change");
-  document.getElementById('nav-overlay').style.display = 'block';
+function openOverlay() {
+  navOverlay.classList.toggle('nav-active');
   body.classList.toggle("stop-scrolling");
 }
 
-function off() {
-  document.getElementById("nav-overlay").style.display = "none";
+function closeOverlay() {
+  navOverlay.classList.toggle('nav-active');
   body.classList.toggle("stop-scrolling");
 }
 
