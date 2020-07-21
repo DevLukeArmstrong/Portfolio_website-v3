@@ -536,7 +536,7 @@ form p {
   background-color: #06B8BE;
 }
 
-@media(max-width: 990px) {
+@media(max-width: 996px) {
   #contact-content {
     margin-top: 400px;
   }
@@ -554,6 +554,25 @@ form p {
     border-radius: 2px;
     border: 0px;
     background-color: #06B8BE;
+  }
+}
+
+@media(max-width: 526px) {
+  #contact-content {
+    margin-top: 420px;
+  }
+}
+
+@media(max-width: 460px) {
+  #contact-content {
+    margin-top: 350px;
+  }
+}
+
+
+@media(max-width: 375px) {
+  #contact-content {
+    margin-top: 200px;
   }
 }
 
