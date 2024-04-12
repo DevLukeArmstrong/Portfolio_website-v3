@@ -347,15 +347,20 @@ h1 {
   height: 117px;
 }
 
-#logo-luke {
-  width: 96px;
-  height: 96px;
+#logo-unify {
+  width: auto;
+  height: 78px;
 }
 
 @media( max-width: 990px) {
   #logo-nyriad {
     width: auto;
     height: 38px;
+  }
+
+  #logo-unify {
+    width: auto;
+    height: 78px;
   }
 
   .project-container {
@@ -370,7 +375,7 @@ h1 {
 /****** About ******/
 #about {
   background-color: #F7F6FA;
-  height: 850px;
+  height: 1100px;
 }
 
 #about-content {
@@ -445,7 +450,7 @@ h3 {
 @media (max-width: 768px) {
   #about {
     background-color: #F7F6FA;
-    height: 1150px;
+    height: 1400px;
   }
 
   #about-content {
@@ -480,7 +485,7 @@ h3 {
 }
 /****** Contact ******/
 #contact-content {
-  margin-top: 300px;
+  margin-top: 420px;
 }
 
 #contact img {
